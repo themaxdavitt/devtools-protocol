@@ -9,9 +9,9 @@ function writeJsonAsTs(jsonPath: string) {
 // import protocol from '${path.relative(__dirname, jsonPath)}' doesn't work since json imports have wide types.
 // We want strings as const literals, so discriminated unions can be type checked.
 
-import {IProtocol} from '../../types/protocol-json-schema';
+import {ProtocolSchema} from '../../types/protocol-schema';
 
-const protocol: IProtocol = ${jsonContent};
+const protocol: ProtocolSchema.Definition = ${jsonContent};
 export default protocol;
 `
   );

@@ -8,5 +8,6 @@
   "bugs": {
     "url": "https://github.com/ChromeDevTools/devtools-protocol/issues"
   },
-  "types": "types/protocol.d.ts"
+  "main": "json/index.js",
+  "types": "types/index.d.ts"
 }

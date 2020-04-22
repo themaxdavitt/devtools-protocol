@@ -1,10 +1,10 @@
-/**  Definition for protocol.json types */
-export interface IProtocol {
-    version: Protocol.Version
-    domains: Protocol.Domain[]
-}
+export namespace ProtocolSchema {
+    /**  Definition for protocol.json types */
+    export interface Definition {
+        version: Version
+        domains: Domain[]
+    }
 
-export module Protocol {
     export interface Version {
         major: string
         minor: string

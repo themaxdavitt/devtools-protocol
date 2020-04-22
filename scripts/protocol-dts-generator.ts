@@ -1,6 +1,6 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import {Protocol as P} from '../types/protocol-json-schema'
+import {ProtocolSchema as P} from '../types/protocol-schema'
 import jsProtocol from './json_as_ts/js_protocol';
 import browserProtocol from './json_as_ts/browser_protocol';
 
